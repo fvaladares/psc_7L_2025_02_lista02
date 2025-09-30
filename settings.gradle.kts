@@ -1,0 +1,1 @@
+rootProject.name = "psc_7L_2025_02_lista02"
