@@ -3,6 +3,7 @@ package org.example;
 
 import org.example.model.ContaDeLuz;
 import org.example.model.ExemplosWhile;
+import org.example.model.FaturaEnergiaEletrica;
 import org.example.model.Financiamento;
 
 import java.util.Scanner;
@@ -10,10 +11,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        ExemplosWhile exemplosWhile = new ExemplosWhile();
+        FaturaEnergiaEletrica faturaEnergiaEletrica = new FaturaEnergiaEletrica();
 
-//        exemplosWhile.executarWhileSimples(new Scanner(System.in));
-        exemplosWhile.executarWhileVAriavelBooleana(new Scanner(System.in));
+        faturaEnergiaEletrica.executar(new Scanner(System.in));
+
+//        ExemplosWhile exemplosWhile = new ExemplosWhile();
+//
+////        exemplosWhile.executarWhileSimples(new Scanner(System.in));
+//        exemplosWhile.executarWhileVAriavelBooleana(new Scanner(System.in));
 //        int opt = 2;
 //
 //        switch (opt) {
