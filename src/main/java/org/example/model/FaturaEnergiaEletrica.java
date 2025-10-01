@@ -11,6 +11,10 @@ public class FaturaEnergiaEletrica {
         double valorAPagar;
         boolean continuar = true;
 
+        // Caso queira usar apenas o comando WHILE
+//        while(continuar) {
+//
+//        }
 
         do {
             System.out.println("Informe o consumo Kwh");
@@ -43,12 +47,14 @@ public class FaturaEnergiaEletrica {
             System.out.println();
             System.out.println("Deseja fazer um novo cálculo? (S - SIM, N - NÃO)");
 
-            input.skip("\n\r");
+            input.skip("\n");
             String opt = input.nextLine();
 
             if (opt.equalsIgnoreCase("N"))
                 continuar = false;
 
         } while (continuar);
+
+        System.out.println("\n\nPROGRMA ENCERRADO.");
     }
 }
